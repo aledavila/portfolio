@@ -7,35 +7,40 @@
     <li class="contact"><a ui-sref-active="active" ui-sref="contact">Contact Me</a></li>
   </ul>
   <a class="exit" ui-sref="home">
-    <!-- <i class="sidebar icon"></i> -->
-    &times;
+    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewbox="-1874 192 934 934">
+      <line class="st0" x1="469.7" y1="302" x2="469.7" y2="876"/>
+      <line class="st0" x1="182.4" y1="576.8" x2="469.7" y2="576.8"/>
+      <path d="M-1713.2 647.1h293.7V352.8C-1579 359.2-1707.2 487.5-1713.2 647.1z"/>
+      <path d="M-1392.5 352.9v294.3 27 291c162.5-7.6 292-141.7 292-306.1S-1230 360.4-1392.5 352.9z"/>
+      <path d="M-1407 192c-257.9 0-467 209.1-467 467s209.1 467 467 467 467-209.1 467-467S-1149.1 192-1407 192zM-1392.5 992.2v0.1h-2.6c-3.9 0.1-7.9 0.2-11.9 0.2s-7.9-0.1-11.9-0.2h-0.6v0 -27V674.1h-293.6c3.9 79.3 37.8 150.6 90.7 202.9l-19.1 19.1c-57.8-57.1-94.8-135.2-98.7-222h-0.4v-27h0.2c6.3-178.7 153.1-321.6 333.3-321.6 184.2 0 333.5 149.3 333.5 333.5C-1073.5 838.3-1215 984.6-1392.5 992.2z"/>
+    </svg>
   </a>
 </div>
 
 <section id="about">
   <div class="name">My Story</div>
   <div class="text">
-      Hello, my name is Ale Davila. I am a web developer currently based in Austin, TX.
-      I am a recent graduate from the <span>General Assembly</span> Web Development Immersive program;
-      I also hold a bachelors degree in Political Science. I started my journey in becoming a web dev after watching
-      the infamous show <span>Silicon Valley</span>. At the time I was applying to law school and decided to research
-      more into what it meant to be a developer. To my surprise I actually loved coding because I saw it as an
-      <span>art</span> and a way to express myself. I decided to take a leap of faith and go to a
-      bootcamp insted of law school. This was November of 2015, and I haven't looked back since.
-      Now at <span>IBM Design</span> I love the focus of front-end, but I hope my next journey also involves the
-      <span>full-stack</span>.
+    Hi, I’m Ale Davila. I am a web developer currently based in Austin, TX. I am a recent graduate from the
+    <span>General Assembly</span> Web Development Immersive program and I hold a bachelors degree in Political
+    Science from UT Austin.
+    <br>
+    <br>
+    While I was applying to law school, I became extremely inspired by web development I saw in the infamous
+    show <span>Silicon Valley</span>. With my interest captured, I decided to research development and find
+    out exactly what the title “developer” meant. This was the beginning of my journey of becoming a developer.
+    <br>
+    <br>
+    To my surprise, I fell in love with coding immediately. To me, programming is an <span>art form</span> and
+    a way I like to express myself. With all of this in mind, I decided to take a leap of faith and go to a
+    developer bootcamp instead of law school. I haven’t looked back since.
+    <br>
+    <br>
+    Currently, I am at <span>IBM Design</span> and am enjoying using my skills as a front-end developer. In the
+    future, though, I would love to be involved on projects that are <span>full-stack</span>.
   </div>
-  <ul>
-    <li id="tech">
-      <a href ng-click="techList = !techList">Tech<sup><i class="angle down icon"></i></sup></a>
-    </li>
-    <li id="work">
-      <!-- <a href="#">Work<sup><i class="angle down icon"></i></sup></a> -->
-      <a href="/assets/Resume_Davila.pdf" target="_blank">Resume</a>
-      <i class="download icon"></i>
-    </li>
-  </ul>
-    <ul id="techlist" ng-show="techList">
+  <div class="skills">
+    <hr class="hr-text" data-content="Technologies">
+    <ul id="techlist">
       <li>JavaScript</li>
       <i class="circle icon"></i>
       <li>Ruby</li>
@@ -68,5 +73,6 @@
       <i class="circle icon"></i>
       <li>InDesign</li>
     </ul>
-    <p id="worklist"></p>
+  </div>
+
 </section>
