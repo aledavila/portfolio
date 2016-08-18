@@ -115,6 +115,7 @@ body {
   }
 
   #about {
+    transform: translate(-50%,-38%);
     .text {
       font-size: 16px;
       text-transform: none;
@@ -166,7 +167,7 @@ body {
 
   #projects {
     font-size: 1em;
-    transform: translate(-50%,-15%);
+    transform: translate(-50%,-11%);
     .project-detail {
       margin-bottom: 10%;
       h3 {
@@ -336,7 +337,7 @@ body {
     }
     #about {
       padding: 0 2%;
-      top: 550px;
+      transform: translate(-50%,-30%);
       #tech,
       #work {
         color: $title;
