@@ -1,0 +1,28 @@
+<div id="nav">
+  <ul>
+    <li class="home"><a ui-sref-active="active" ui-sref="home">Home</a></li>
+    <li class="story"><a ui-sref-active="active" ui-sref="about">My Story</a></li>
+    <li class="projects"><a ui-sref-active="active" ui-sref="projects">Projects</a></li>
+    <!-- <li class="code"><a ui-sref-active="active" ui-sref="code">Code Snippets</a></li> -->
+    <li class="contact"><a ui-sref-active="active" ui-sref="contact">Contact Me</a></li>
+  </ul>
+  <a class="exit" ui-sref="home">
+    <!-- <i class="sidebar icon"></i> -->
+    &times;
+  </a>
+</div>
+
+
+<section id="contact">
+  <div class="name">Contact</div>
+    <form action="//formspree.io/davilaaguilar23@gmail.com" method="POST">
+        <input class="text" id="name" type="text" name="name">
+        <label for="name">Name</label>
+        <input class="text" id="email" type="email" name="_replyto">
+        <label for="email">Email</label>
+        <textarea class="text" id="text-area" type="text-area" name="message"></textarea>
+        <label for="message">Message</label>
+        <input type="hidden" name="_next" value="/">
+        <button id="btn-submit" class="ui labeled icon button" type="submit" value="Send"><i class="send icon"></i>Send</button>
+    </form>
+</section>

@@ -1,0 +1,72 @@
+<div id="nav">
+  <ul>
+    <li class="home"><a ui-sref-active="active" ui-sref="home">Home</a></li>
+    <li class="story"><a ui-sref-active="active" ui-sref="about">My Story</a></li>
+    <li class="projects"><a ui-sref-active="active" ui-sref="projects">Projects</a></li>
+    <!-- <li class="code"><a ui-sref-active="active" ui-sref="code">Code Snippets</a></li> -->
+    <li class="contact"><a ui-sref-active="active" ui-sref="contact">Contact Me</a></li>
+  </ul>
+  <a class="exit" ui-sref="home">
+    <!-- <i class="sidebar icon"></i> -->
+    &times;
+  </a>
+</div>
+
+<section id="about">
+  <div class="name">My Story</div>
+  <div class="text">
+      Hello, my name is Ale Davila. I am a web developer currently based in Austin, TX.
+      I am a recent graduate from the <span>General Assembly</span> Web Development Immersive program;
+      I also hold a bachelors degree in Political Science. I started my journey in becoming a web dev after watching
+      the infamous show <span>Silicon Valley</span>. At the time I was applying to law school and decided to research
+      more into what it meant to be a developer. To my surprise I actually loved coding because I saw it as an
+      <span>art</span> and a way to express myself. I decided to take a leap of faith and go to a
+      bootcamp insted of law school. This was November of 2015, and I haven't looked back since.
+      Now at <span>IBM Design</span> I love the focus of front-end, but I hope my next journey also involves the
+      <span>full-stack</span>.
+  </div>
+  <ul>
+    <li id="tech">
+      <a href ng-click="techList = !techList">Tech<sup><i class="angle down icon"></i></sup></a>
+    </li>
+    <li id="work">
+      <!-- <a href="#">Work<sup><i class="angle down icon"></i></sup></a> -->
+      <a href="/assets/Resume_Davila.pdf" target="_blank">Resume</a>
+      <i class="download icon"></i>
+    </li>
+  </ul>
+    <ul id="techlist" ng-show="techList">
+      <li>JavaScript</li>
+      <i class="circle icon"></i>
+      <li>Ruby</li>
+      <i class="circle icon"></i>
+      <li>Rails</li>
+      <i class="circle icon"></i>
+      <li>jQuery</li>
+      <i class="circle icon"></i>
+      <li>MEAN stack</li>
+      <i class="circle icon"></i>
+      <li>Bootstrap</li>
+      <i class="circle icon"></i>
+      <li>Semantic-UI</li>
+      <i class="circle icon"></i>
+      <li>Postgres</li>
+      <i class="circle icon"></i>
+      <li>SQL</li>
+      <i class="circle icon"></i>
+      <li>Sass</li>
+      <i class="circle icon"></i>
+      <li>Git</li>
+      <i class="circle icon"></i>
+      <li>HTML</li>
+      <i class="circle icon"></i>
+      <li>CSS</li>
+      <i class="circle icon"></i>
+      <li>Heroku</li>
+      <i class="circle icon"></i>
+      <li>AWS</li>
+      <i class="circle icon"></i>
+      <li>InDesign</li>
+    </ul>
+    <p id="worklist"></p>
+</section>
