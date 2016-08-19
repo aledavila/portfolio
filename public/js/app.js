@@ -16,9 +16,9 @@
       }).state('projects', {
         url: '/projects',
         templateUrl: '/templates/_projectsView.html'
-      }).state('contact', {
-        url: '/contact',
-        templateUrl: '/templates/_contactView.html'
+      }).state('resume', {
+        url: '/resume',
+        templateUrl: '/templates/_resumeView.html'
       });
   });
 })();
