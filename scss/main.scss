@@ -32,10 +32,10 @@ body {
   width: 100%;
   line-height: 1.5;
 
-  #nav .exit{
+  .nav .exit{
     display: none;
   }
-  #nav li {
+  .nav li {
     display: inline-block;
     padding-right: 1.5em;
     z-index: 100;
@@ -49,10 +49,10 @@ body {
     }
   }
 
-  #home,
-  #about,
-  #contact,
-  #projects {
+  .home,
+  .about,
+  .resume,
+  .projects {
     max-width: 700px;
     width: 100%;
 
@@ -66,6 +66,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    margin-bottom: 1em;
     .name {
       font-size: 14px;
       letter-spacing: 8px;
@@ -75,7 +76,7 @@ body {
     }
   }
 
-  #menu {
+  .menu {
     font-size: 18px;
     color: $text;
     top: 70%;
@@ -96,15 +97,15 @@ body {
     }
   }
 
-  #nav,
-  #about,
-  #projects,
-  #contact {
+  .nav,
+  .about,
+  .projects,
+  .resume {
     position: absolute;
     margin-top: 14px;
   }
 
-  #home {
+  .home {
     .logo {
       fill: white;
       width: 85px;
@@ -114,7 +115,7 @@ body {
     }
   }
 
-  #about {
+  .about {
     transform: translate(-50%,-38%);
     .text {
       font-size: 16px;
@@ -126,46 +127,9 @@ body {
         font-weight: 400;
       }
     }
-    .skills {
-      margin: 40px auto;
-      text-align: center;
-      .hr-text {
-        font-size: .5em;
-        position: relative;
-        border: 0;
-        height: 1.5em;
-        &:before {
-          content: '';
-          background: linear-gradient(to right, transparent, $detail, transparent);
-          position: absolute;
-          left: 0;
-          top: 50%;
-          width: 100%;
-          height: 1px;
-        }
-        &:after {
-          content: attr(data-content);
-          position: relative;
-          display: inline-block;
-          color: black;
-
-          padding: 0 .5em;
-          line-height: 1.5em;
-          color: $title;
-          background-color: black;
-        }
-      }
-      li {
-        display: inline-block;
-        font-size: 12px;
-      }
-      i {
-        font-size: 7px;
-      }
-    }
   }
 
-  #projects {
+  .projects {
     font-size: 1em;
     transform: translate(-50%,-11%);
     .project-detail {
@@ -224,38 +188,90 @@ body {
     }
   }
 
-  #contact {
-    form {
-      font-size: 18px;
-      input,
-      label {
-        display: block;
+  .resume {
+    transform: translate(-50%,-20%);
+    h4 {
+      color: $header;
+    }
+    h5 {
+      margin-top: 0;
+      font-size: .4em;
+    }
+    .content {
+      margin: 40px auto;
+      hr {
+        font-size: .5em;
+        position: relative;
+        border: 0;
+        height: 1.5em;
+        text-align: center;
+        &:before {
+          content: '';
+          background: linear-gradient(to right, transparent, $detail, transparent);
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 100%;
+          height: 1px;
+        }
+        &:after {
+          content: attr(data-content);
+          position: relative;
+          display: inline-block;
+          color: black;
+
+          padding: 0 .5em;
+          line-height: 1.5em;
+          color: $title;
+          background-color: black;
+        }
       }
-      .text {
-        border: none;
-        background: transparent;
-        border-bottom: 1px dotted $text !important;
-        color: $title;
-        width: 400px;
-        outline: none;
-        font-weight: bold;
+      li {
+        font-size: 12px;
       }
-      .text:hover {
-        outline: dotted 1px $title;
-        border-bottom: none !important;
+      i {
+        font-size: 7px;
       }
-      textarea {
-        height: 100px
+    }
+    .experience {
+      li {
+        list-style: disc;
+        text-transform: none;
       }
-      label {
-        margin-bottom: 2%;
+    }
+    .skills {
+      text-align: center;
+      ul {
+        padding: 0;
+        li {
+          display: inline-block;
+        }
       }
-      #btn-submit {
-        border: none;
-        background: $highlight;
-        color: white;
-        font-family: 'Lato' !important;
-        font-weight: 300;
+    }
+    span {
+      color: $detail;
+      font-size: .7em;
+      text-transform: none;
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h4 {
+        color: $text;
+      }
+      a {
+        text-align: center;
+        text-decoration: none;
+        color: $highlight;
+        border: 1px solid $highlight;
+        background-color: transparent;
+        font-size: .5em;
+        padding: 2%;
+        width: 30%;
+      }
+      a:hover {
+        color: $text;
       }
     }
   }
@@ -311,7 +327,7 @@ body {
   }
 
   @media all and (max-width: 736px) {
-    #nav ul {
+    .nav ul {
       display: none !important;
     }
     .exit {
@@ -327,15 +343,15 @@ body {
       margin-left: 2%;
       top: 45%;
     }
-    #menu {
+    .menu {
       top: 75%;
     }
-    #home {
+    .home {
       .logo {
         display: none;
       }
     }
-    #about {
+    .about {
       padding: 0 2%;
       transform: translate(-50%,-30%);
       #tech,
@@ -355,7 +371,7 @@ body {
         }
       }
     }
-    #projects {
+    .projects {
       top: 12%;
       max-width: 300px;
       transform: translate(-48%, 0);
@@ -403,11 +419,11 @@ body {
     }
   }
   @media all and (max-width:736px) and (orientation: landscape) {
-    #about {
+    .about {
       padding: 0 2%;
       top: 450px;
     }
-    #contact {
+    .resume {
       top: 60%;
       left: 65%;
     }
