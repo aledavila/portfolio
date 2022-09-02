@@ -18,7 +18,7 @@ export default function Home() {
     return function cleanup() {
       document.removeEventListener('keydown', handleKeyDown);
     }
-  }, []);
+  }, [router]);
 
   return ( 
     <div className='flex flex-col items-start justify-start w-full h-screen'>
