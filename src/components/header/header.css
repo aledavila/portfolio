@@ -1,0 +1,17 @@
+.nav--logo {
+  cursor: pointer;
+}
+
+.nav--logo a:hover {
+  color: #f7fafc;
+} 
+
+.nav--link-button {
+  background-color: rgba(247, 250, 252, 0.1);
+  border: 1px solid #b4b4b4;
+}
+
+.nav--link-button:hover {
+  background-color: rgba(96, 96, 96, 0.5);
+  border: 1px solid #b4b4b4;
+}

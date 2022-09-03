@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import '../src/components/header/header.css';
 @import '../src/components/projects/project-card/project-card.css';
+@import '../src/components/about/about.css';
 
 
 @font-face {
