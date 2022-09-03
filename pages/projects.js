@@ -1,5 +1,6 @@
 import Layout from '../src/components/layout';
 import Projects from '../src/components/projects';
+import ProjectCard from '../src/components/projects/project-card';
 
 export default function ProjectsPage() {
   return (
@@ -9,4 +10,4 @@ export default function ProjectsPage() {
       </div>
     </Layout>
   )
-}
+};
