@@ -2,31 +2,11 @@ import React from 'react';
 import Header from '../Header/Header';
 // import SEO from '../../SEO';
 
-const Layout = ({ children }) => {
-
-  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-  // if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  //   document.documentElement.classList.add('dark')
-  // } else {
-  //   document.documentElement.classList.remove('dark')
-  // }
-
-  // // Whenever the user explicitly chooses light mode
-  // localStorage.theme = 'light'
-
-  // // Whenever the user explicitly chooses dark mode
-  // localStorage.theme = 'dark'
-
-  // // Whenever the user explicitly chooses to respect the OS preference
-  // localStorage.removeItem('theme')
-
-  return (
+const Layout = ({ children }) => (
     <div className='flex flex-col items-start justify-start w-full h-screen'>
-      {/* <SEO /> */}
       <Header />
       {children}
     </div>
   );
-}
 
 export default Layout;
