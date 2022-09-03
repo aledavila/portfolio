@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
-import Header from '../src/components/header';
+import Layout from '../src/components/Layout/layout';
 
 export default function Home() {
   const router = useRouter()
@@ -21,9 +21,10 @@ export default function Home() {
   }, [router]);
 
   return ( 
-    <div className='flex flex-col items-start justify-start w-full h-screen'>
-      <Header />
-      <p>Thats it. That's my portfolio.</p>
-    </div>
+    <Layout>
+      <div className='page w-full h-full lg:px-8 px-5 lg:pt-8 pt-5'>
+        <h2>Front-end Developer</h2>
+      </div>
+    </Layout>
   )
 }

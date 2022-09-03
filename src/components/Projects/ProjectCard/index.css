@@ -1,0 +1,14 @@
+.project-card {
+  border: 1px solid #a4a4a4;
+  overflow: hidden;
+}
+
+.project-card img {
+  transition: all .3s ease;
+}
+
+@media (hover: hover){
+  .project-card img:hover {
+    transform: scale(1.1);
+  }
+}

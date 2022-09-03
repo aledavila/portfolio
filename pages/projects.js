@@ -1,10 +1,12 @@
-import Header from "../src/components/header";
+import Layout from "../src/components/Layout/layout";
+import Projects from "../src/components/Projects";
 
-export default function Projects() {
+export default function ProjectsPage() {
   return (
-    <div className='flex flex-col items-start justify-start w-full h-screen'>
-      <Header />
-      <p>Projects</p>
-    </div>
+    <Layout>
+      <div className='page w-full h-full px-6 lg:px-12 xl:px-20 pt-8 lg:pt-12'>
+        <Projects />
+      </div>
+    </Layout>
   )
 }

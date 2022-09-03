@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '../src/components/Projects/ProjectCard/index.css';
+
+
 @font-face {
   font-family: 'Mono';
   src: url('../public/fonts/MonoRegular.woff2');
@@ -16,11 +19,31 @@
   font-style: normal;
 }
 
+/* @layer utilities {
+  :root {
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #edf2f7;
+    --color-text-primary: #2d3748;
+    --color-text-secondary: #4a5568;
+    --color-text-accent: #2b6cb0;
+  }
+
+  .dark {
+    --color-bg-primary: #171717;
+    --color-bg-secondary: #283141;
+    --color-text-primary: #f7fafc;
+    --color-text-secondary: #a4a4a4;
+    --color-border: #b4b4b4;
+  }
+} */
+
 html,
 body {
   font-family: 'MSBee-Light', sans-serif;
   padding: 0;
   margin: 0;
+  background-color: #171717;
+  color: #a4a4a4;
 }
 
 h1,

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return ( 
-    <div className='nav w-full lg:px-8 px-5 lg:pt-8 pt-5 z-70'>
+    <div role='nav' className='nav w-full px-6 lg:px-12 xl:px-20 pt-5 md:pt-8 z-70'>
       <Link href="/">
           <a className='home uppercase text-xl'>Ale Davila</a>
         </Link>
