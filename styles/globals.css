@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '../src/components/Projects/ProjectCard/index.css';
+@import '../src/components/projects/project-card/project-card.css';
 
 
 @font-face {
