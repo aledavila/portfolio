@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
-import Layout from '../src/components/Layout/layout';
+import Layout from '../src/components/Layout/Layout';
 
 export default function Home() {
   const router = useRouter()
