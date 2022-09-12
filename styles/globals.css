@@ -45,13 +45,19 @@ body {
   font-family: 'MSBee-Light', sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #171717;
-  color: #a4a4a4;
+  background: rgb(55,55,153);
+  /* background: radial-gradient(circle, rgba(55,55,153,1) 0%, rgba(123,156,227,1) 0%, rgba(55,55,153,1) 100%); */
+  /* color: #222222; */
+  background-color: black;
+  color: whitesmoke;
 }
 
 h1,
 .home {
   font-family: 'Mono' , monospace;
+  background: linear-gradient(90.13deg,#d1aad7 .11%,#c88bc4 25.06%,#7b8fdd 50%,#86bff2 74.8%,#bbdef2 99.76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 a {
