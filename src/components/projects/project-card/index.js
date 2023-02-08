@@ -18,15 +18,9 @@ const projects = [
     src: 'images/reid-bg.png'
   },
   {
-    id: 'MV3-Mint',
-    alt: 'MV3 Minting',
-    url: 'https://www.mv3access.com/',
-    src: 'images/mv3-access.png'
-  },
-  {
-    id: 'MV3-Gallery',
-    alt: 'MV3 Gallery',
-    url: 'https://gallery.mv3.io/',
+    id: 'MV3',
+    alt: 'MV3',
+    url: 'https://mv3.io/',
     src: 'images/mv3-gallery.png'
   },
 ];
