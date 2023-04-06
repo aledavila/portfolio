@@ -23,6 +23,12 @@ const projects = [
     url: 'https://mv3.io/',
     src: 'images/mv3-gallery.png'
   },
+  {
+    id: 'Camp Cosmos',
+    alt: 'Camp Cosmos',
+    url: 'https://campcosmos.io',
+    src: 'images/camp-cosmos.png'
+  },
 ];
 
 export default function ProjectCard() {
