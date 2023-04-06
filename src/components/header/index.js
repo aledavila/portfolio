@@ -11,7 +11,7 @@ export default function Header() {
       <div className='nav--links'>
         <Link href='/about'><button className='nav--link-button mr-4 px-2 rounded'>About</button></Link>
         <Link href='/projects'><button className='nav--link-button mr-4 px-2 rounded'>Projects</button></Link>
-        <Link href='Davila_resume.pdf'><button className='nav--link-button px-2 rounded'>Resume</button></Link>
+        <Link href='Alessandra_Davila_Resume.pdf'><button className='nav--link-button px-2 rounded'>Resume</button></Link>
       </div>
     </div>
   )
