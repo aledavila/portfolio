@@ -72,7 +72,7 @@ SEO.propTypes = {
 };
 
 SEO.defaultProps = {
-  description: 'Alessandra Davila - front-end developer',
+  description: 'Alessandra Davila - frontend developer',
   image: '/images/cc-logo-floating.png',
   openGraphType: 'website',
   schemaType: 'Article',
@@ -80,7 +80,7 @@ SEO.defaultProps = {
     twitter: '@aledavila__'
   },
   title: 'Ale Davila',
-  url: 'https://www.aledavila.io',
+  url: 'https://www.aledavila.com',
 };
 
 export default SEO;

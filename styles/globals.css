@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Manrope:wght@300;400&family=Montserrat:wght@200;300&family=Philosopher&display=swap');
 @import '../src/components/header/header.css';
 @import '../src/components/projects/project-card/project-card.css';
 @import '../src/components/about/about.css';
@@ -48,13 +48,15 @@ body {
   background: rgb(55,55,153);
   /* background: radial-gradient(circle, rgba(55,55,153,1) 0%, rgba(123,156,227,1) 0%, rgba(55,55,153,1) 100%); */
   /* color: #222222; */
-  background-color: black;
-  color: whitesmoke;
+  background-color: #1d1d20;
+  color: #d1d1d1;
 }
 
 h1,
 .home {
-  font-family: 'Mono' , monospace;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+
   background: linear-gradient(90.13deg,#d1aad7 .11%,#c88bc4 25.06%,#7b8fdd 50%,#86bff2 74.8%,#bbdef2 99.76%);
   background-clip: text;
   -webkit-background-clip: text;

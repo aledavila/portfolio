@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+.home--link {
+  font-family: 'Philosopher', sans-serif;
+}
+
 .nav--logo {
   cursor: pointer;
 }
