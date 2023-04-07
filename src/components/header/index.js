@@ -12,7 +12,7 @@ export default function Header() {
         <Link href='/about'><button className='nav--link-button mr-4 px-2 rounded'>About</button></Link>
         <Link href='/projects'><button className='nav--link-button mr-4 px-2 rounded'>Projects</button></Link>
         <Link href='Alessandra_Davila_Resume.pdf'><button className='nav--link-button px-2 rounded'>Resume</button></Link>
-        <Link href='blog.aledavila.com/'><button className='nav--link-button px-2 rounded'>Resources</button></Link>
+        <Link href='https://blog.aledavila.com/'><button className='nav--link-button px-2 rounded'>Resources</button></Link>
       </div>
     </div>
   )
