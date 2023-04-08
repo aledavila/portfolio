@@ -23,8 +23,8 @@ export default function HomePage() {
 
   return ( 
     <Layout>
-      <div className='page w-full h-full px-6 lg:px-12 xl:px-20 flex items-center'>
-        <h1 className='home text-2xl sm:text-5xl md:text-8xl'>Alessandra Davila</h1>
+      <div role='main' className='page w-full h-full px-6 lg:px-12 xl:px-20 flex items-center'>
+        <h2 className='home text-2xl sm:text-5xl md:text-8xl'>Alessandra Davila</h2>
       </div>
     </Layout>
   )

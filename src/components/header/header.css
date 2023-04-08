@@ -4,20 +4,6 @@
   font-family: 'Philosopher', sans-serif;
 }
 
-.nav--logo {
+.header--logo {
   cursor: pointer;
-}
-
-.nav--logo a:hover {
-  color: #f7fafc;
-} 
-
-.nav--link-button {
-  background-color: rgba(104, 100, 165, 0.1);
-  /* background-color: black; */
-}
-
-.nav--link-button:hover {
-  background-color: rgba(104, 100, 165, 0.5);
-  color: #f7fafc;
 }

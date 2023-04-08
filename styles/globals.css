@@ -4,8 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Manrope:wght@300;400&family=Montserrat:wght@200;300&family=Philosopher&display=swap');
 @import '../src/components/header/header.css';
+@import '../src/components/nav/nav.css';
 @import '../src/components/projects/project-card/project-card.css';
 @import '../src/components/about/about.css';
+
 
 
 @font-face {
@@ -52,7 +54,7 @@ body {
   color: #d1d1d1;
 }
 
-h1,
+h2,
 .home {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;

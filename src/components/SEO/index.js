@@ -32,7 +32,7 @@ const SEO = (props) => {
   const { description, image, schemaType, title, url } = props;
   return (
     <Head>
-      <title>{title}</title>
+      <title>Ale Davila</title>
       <meta charSet="utf-8" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
