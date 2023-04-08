@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Navigation from '../nav';
+import Nav from '../nav';
 
 export default function Header() {
   return ( 
@@ -9,7 +9,7 @@ export default function Header() {
           AD.
         </Link>
       </div>
-      <Navigation />
+      <Nav />
     </header>
   )
 }

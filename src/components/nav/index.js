@@ -74,7 +74,7 @@ const Nav = () => {
       </button>
       <ul
         id="nav-menu"
-        className={`menu--list ${showMenu ? 'menu--list__active' : ''} md:flex`}
+        className={`menu--list ${showMenu ? 'menu--list__active' : ''}`}
         onKeyDown={handleKeyDown}
         onBlur={handleMenuBlur}
         ref={menuRef}
@@ -82,16 +82,16 @@ const Nav = () => {
         aria-label="Main Navigation"
       >
         <li role='none'>
-          <Link href='/about' role="menuitem" className='nav--link-button md:mr-4 md:px-2 md:rounded'>About</Link>
+          <Link href='/about' role="menuitem" className='nav--link md:mr-4 md:px-2 md:rounded'>About</Link>
         </li>
         <li role='none'>
-        <Link href='/projects' role="menuitem" className='nav--link-button md:mr-4 md:px-2 md:rounded'>Projects</Link>
+        <Link href='/projects' role="menuitem" className='nav--link md:mr-4 md:px-2 md:rounded'>Projects</Link>
         </li>
         <li role='none'>
-          <Link href='Alessandra_Davila_Resume.pdf' role="menuitem" className='nav--link-button md:mr-4 md:px-2 md:rounded'>Resume</Link>
+          <Link href='Alessandra_Davila_Resume.pdf' role="menuitem" className='nav--link md:mr-4 md:px-2 md:rounded'>Resume</Link>
         </li>
         <li role='none'>
-          <Link href='https://blog.aledavila.com/' role="menuitem" className='nav--link-button md:mr-4 md:px-2 md:rounded'>Resources</Link>
+          <Link href='https://blog.aledavila.com/' role="menuitem" className='nav--link md:mr-4 md:px-2 md:rounded'>Resources</Link>
         </li>
       </ul>
     </nav>
