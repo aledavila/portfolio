@@ -7,6 +7,7 @@
 @import '../src/components/nav/nav.css';
 @import '../src/components/projects/project-card/project-card.css';
 @import '../src/components/about/about.css';
+@import '../src//components/darkMode/darkMode.css';
 
 
 
@@ -22,6 +23,16 @@
   src: url('../public/fonts/MSBee-Light.woff2');
   font-weight: normal;
   font-style: normal;
+}
+
+:root {
+  --color-primary: #3b82f6;
+  --color-secondary: #ec4899;
+}
+
+[data-theme='dark'] {
+  --color-background: #1d1d20;
+  --color-text: #d1d1d1;
 }
 
 /* @layer utilities {
@@ -48,10 +59,11 @@ body {
   padding: 0;
   margin: 0;
   background: rgb(55,55,153);
-  /* background: radial-gradient(circle, rgba(55,55,153,1) 0%, rgba(123,156,227,1) 0%, rgba(55,55,153,1) 100%); */
-  /* color: #222222; */
-  background-color: #1d1d20;
-  color: #d1d1d1;
+  /* background-color: #1d1d20;
+  color: #d1d1d1; */
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 
 h2,
@@ -72,4 +84,33 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-background);
+}
+
+.dark {
+  --color-background: #111827;
+  --color-text: #f9fafb;
+}
+
+.dark .text-primary {
+  color: var(--color-text);
+}
+
+.dark .bg-primary {
+  background-color: var(--color-primary);
+}
+
+.dark .bg-secondary {
+  background-color: var(--color-text);
 }
