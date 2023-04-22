@@ -7,9 +7,7 @@
 @import '../src/components/nav/nav.css';
 @import '../src/components/projects/project-card/project-card.css';
 @import '../src/components/about/about.css';
-@import '../src//components/darkMode/darkMode.css';
-
-
+@import '../src/components/darkMode/darkMode.css';
 
 @font-face {
   font-family: 'Mono';
