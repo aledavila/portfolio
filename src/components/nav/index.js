@@ -91,7 +91,7 @@ const Nav = () => {
           <Link href='Alessandra_Davila_Resume.pdf' role="menuitem" className='nav--link md:mr-4 md:px-2 md:rounded'>Resume</Link>
         </li>
         <li role='none'>
-          <Link href='https://blog.aledavila.com/' role="menuitem" className='nav--link md:mr-4 md:px-2 md:rounded'>Resources</Link>
+          <Link href='https://resources.aledavila.com/' role="menuitem" className='nav--link md:mr-4 md:px-2 md:rounded'>Resources</Link>
         </li>
       </ul>
     </nav>
