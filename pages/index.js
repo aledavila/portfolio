@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 import Layout from '../src/components/layout';
-import About from '../src/components/about';
 
 export default function HomePage() {
   const router = useRouter()
@@ -23,7 +22,7 @@ export default function HomePage() {
 
   return ( 
     <Layout>
-      <div role='main' className='page w-full h-full px-6 lg:px-12 xl:px-20 flex items-center'>
+      <div role='main' className='relative page w-full h-full px-6 lg:px-12 xl:px-20 flex items-center bg-light'>
         <h2 className='home text-2xl sm:text-5xl md:text-8xl'>Alessandra Davila</h2>
       </div>
     </Layout>
