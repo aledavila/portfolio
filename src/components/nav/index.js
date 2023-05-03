@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import Link from 'next/link';
+import DarkModeToggle from '../darkMode';
 import cx from "classnames";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
@@ -62,7 +63,7 @@ const Nav = () => {
   }, [showMenu]);
 
   return (
-    <nav className="mobile--nav flex" ref={navRef}>
+    <nav className="flex" ref={navRef}>
       <button
         className="nav--toggle md:hidden"
         aria-label={showMenu ? "Close menu" : "Open menu"}
@@ -93,6 +94,7 @@ const Nav = () => {
         <li role='none'>
           <Link href='https://blog.aledavila.com/' role="menuitem" className='nav--link md:mr-4 md:px-2 md:rounded'>Resources</Link>
         </li>
+        <DarkModeToggle />
       </ul>
     </nav>
   );

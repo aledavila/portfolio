@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 import Layout from '../src/components/layout';
-import DarkModeToggle from '../src/components/darkMode';
 
 export default function HomePage() {
   const router = useRouter()
@@ -25,7 +24,6 @@ export default function HomePage() {
     <Layout>
       <div role='main' className='relative page w-full h-full px-6 lg:px-12 xl:px-20 flex items-center bg-light'>
         <h2 className='home text-2xl sm:text-5xl md:text-8xl'>Alessandra Davila</h2>
-        <DarkModeToggle />
       </div>
     </Layout>
   )

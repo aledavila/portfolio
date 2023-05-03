@@ -17,26 +17,20 @@ function DarkModeToggle() {
   }
 
   return (
-    <div className="fixed top-4 right-4">
-      <button
-        className='nav--link md:mr-4 md:px-2 md:rounded'
-        type="button"
-        aria-label={isDark ? 'Disable dark mode' : 'Enable dark mode'}
-        onClick={toggleTheme}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            toggleTheme()
-          }
-        }}
-        tabIndex="0"
-      >
-        {/* <span className="sr-only">
-          {isDark ? 'Disable dark mode' : 'Enable dark mode'}
-        </span>
-         */}
-        {isDark ? <FiMoon aria-hidden='true' /> : <FiSun aria-hidden='true' />}
-      </button>
-    </div>
+    <button
+      className='nav--link md:mr-4 md:px-2 md:rounded'
+      type="button"
+      aria-label={isDark ? 'Disable dark mode' : 'Enable dark mode'}
+      onClick={toggleTheme}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          toggleTheme()
+        }
+      }}
+      tabIndex="0"
+    >
+      {isDark ? <FiMoon aria-hidden='true' /> : <FiSun aria-hidden='true' />}
+    </button>
   )
 }
 

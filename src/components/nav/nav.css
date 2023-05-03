@@ -13,8 +13,8 @@
   display: flex;
 }
 
-.nav__item {
-  margin: 1rem 0;
+.nav--link {
+  display: block;
 }
 
 @media (min-width: 769px) {
