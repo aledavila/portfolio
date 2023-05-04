@@ -2,3 +2,13 @@ button.nav--link {
   height: 1.5rem;
   background-color: rgba(104, 100, 165, 0.1);
 }
+
+@media (max-width: 768px) {
+  button.nav--link {
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+} 
