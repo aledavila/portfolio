@@ -1,14 +1,25 @@
-.project-card {
-  /* border: 1px solid #a4a4a4; */
-  overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&La+Belle+Aurore&display=swap');
+
+/* .project-card {
+overflow: hidden;
 }
 
 .project-card img {
-  transition: all .3s ease;
+transition: all .3s ease;
 }
 
 @media (hover: hover){
-  .project-card img:hover {
+.project-card img:hover {
     transform: scale(1.1);
-  }
+}
+} */
+
+.project-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.project-desc,
+.tech-stack {
+  font-family: 'Mono-light';
 }
