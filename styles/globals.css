@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Manrope:wght@300;400&family=Montserrat:wght@200;300&family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat:wght@200;300&display=swap');
 @import '../src/components/header/header.css';
 @import '../src/components/nav/nav.css';
 @import '../src/components/projects/project-card/project-card.css';
@@ -17,6 +17,13 @@
 }
 
 @font-face {
+  font-family: 'Mono-light';
+  src: url('../public/fonts/MonoLight.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'MSBee-Light';
   src: url('../public/fonts/MSBee-Light.woff2');
   font-weight: normal;
@@ -25,12 +32,14 @@
 
 :root {
   --color-background: #ECECEC;
+  --color-bg-projects: #DBC1B0;
 }
 
-[data-theme='dark'] {
+/* [data-theme='dark'] {
   --color-background: #111827;
+  --color-bg-projects: #423E4D;
   --color-text: #ECECEC;
-}
+} */
 
 /* @layer utilities {
   :root {
@@ -80,11 +89,23 @@ a {
   box-sizing: border-box;
 }
 
+
+
+/* THEME */
+.project--container {
+  background-color: var(--color-bg-projects);
+}
+
 .dark {
   --color-background: #111827;
+  --color-bg-projects: #423E4D;
   --color-text: #ECECEC;
 }
 
 .dark .text-primary {
   color: var(--color-text);
+}
+
+.dark .project--container {
+  background-color: var(--color-bg-projects);
 }
