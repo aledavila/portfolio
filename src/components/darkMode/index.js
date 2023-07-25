@@ -23,8 +23,9 @@ function DarkModeToggle() {
       aria-label={isDark ? 'Disable dark mode' : 'Enable dark mode'}
       onClick={toggleTheme}
       onKeyDown={(e) => {
+        console.log(e);
         if (e.key === 'Enter' || e.key === ' ') {
-          toggleTheme()
+          toggleTheme
         }
       }}
       tabIndex="0"

@@ -1,7 +1,6 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Link from 'next/link';
 import DarkModeToggle from '../darkMode';
-import cx from "classnames";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 // NOTE: for desktop if adding arrow functionality to mobile nav
@@ -28,8 +27,6 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const navRef = useRef(null);
-  const menuRef = useRef(null);
 
   function toggleMenu() {
     setShowMenu(!showMenu);
@@ -38,38 +35,18 @@ const Nav = () => {
   function handleKeyDown(e) {
     if (e.key === "Escape") {
       setShowMenu(false);
-      // if (menuRef.current) {
-      //   const toggleButton = menuRef.current.querySelector('button');
-      //   if (toggleButton) {
-      //     setTimeout(() => {
-      //       toggleButton.focus();
-      //     }, 0);
-      //   }
-      // }
     }
   }
-  
-
-  function handleMenuBlur(event) {
-    if (!navRef.current.contains(event.relatedTarget)) {
-      setShowMenu(false);
-    }
-  }
-
-  useEffect(() => {
-    if (showMenu) {
-      navRef.current.querySelector("a").focus();
-    }
-  }, [showMenu]);
 
   return (
-    <nav className="flex" ref={navRef}>
+    <nav className="flex" aria-label='Navigation'>
       <button
         className="nav--toggle md:hidden"
         aria-label={showMenu ? "Close menu" : "Open menu"}
         aria-expanded={showMenu}
         aria-controls="nav-menu"
         onClick={toggleMenu}
+        onKeyDown={handleKeyDown}
       >
         {showMenu ? <AiOutlineClose /> : <AiOutlineMenu />}
       </button>
@@ -77,22 +54,20 @@ const Nav = () => {
         id="nav-menu"
         className={`menu--list ${showMenu ? 'menu--list__active' : ''}`}
         onKeyDown={handleKeyDown}
-        onBlur={handleMenuBlur}
-        ref={menuRef}
         role="menubar"
         aria-label="Main Navigation"
       >
-        <li role='none'>
-          <Link href='/about' role="menuitem" className='nav--link md:mr-4 md:px-2 md:rounded'>About</Link>
+        <li>
+          <Link href='/about' className='nav--link md:mr-4 md:px-2 md:rounded'>About</Link>
         </li>
-        <li role='none'>
-        <Link href='/projects' role="menuitem" className='nav--link md:mr-4 md:px-2 md:rounded'>Projects</Link>
+        <li>
+          <Link href='/projects' className='nav--link md:mr-4 md:px-2 md:rounded'>Projects</Link>
         </li>
-        <li role='none'>
-          <Link href='Alessandra_Davila_Resume.pdf' role="menuitem" className='nav--link md:mr-4 md:px-2 md:rounded'>Resume</Link>
+        <li>
+          <a href='Alessandra_Davila_Resume.pdf' className='nav--link md:mr-4 md:px-2 md:rounded'>Resume</a>
         </li>
-        <li role='none'>
-          <Link href='https://resources.aledavila.com/' role="menuitem" className='nav--link md:mr-4 md:px-2 md:rounded'>Resources</Link>
+        <li>
+          <a href='https://resources.aledavila.com/' className='nav--link md:mr-4 md:px-2 md:rounded'>Resources</a>
         </li>
         <DarkModeToggle />
       </ul>

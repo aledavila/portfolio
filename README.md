@@ -1,1 +1,1 @@
-This is my portfolio. Its basic for now
+This is my portfolio. It's basic for now
