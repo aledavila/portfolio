@@ -28,7 +28,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="project--container relative lg:mt-12 duration-500 bg-opacity-100 shadow-xl rounded-xl 2xl:w-10/12 w-full h-full lg:h-2/3 z-[40]">
+    <div className="project--container relative lg:mt-12 duration-500 bg-opacity-100 shadow-xl rounded-xl 2xl:w-10/12 w-full h-full lg:h-2/3">
       <ProjectCard activeIndex={activeIndex} projectsData={projectsData} />
       <div className="absolute top-1/2 lg:left-0 -left-4 transform -translate-y-1/2">
         <button
