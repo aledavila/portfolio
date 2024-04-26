@@ -35,7 +35,7 @@ export const projectsData = [
     {
       id: 'Camp Cosmos',
       name: 'Camp Cosmos',
-      url: 'https://campcosmos.io',
+      url: 'https://camp-cosmos.vercel.app/',
       src: 'images/camp-cosmos.png',
       techStack: ['React', 'SASS', 'MUI', 'Next.js']
     },
