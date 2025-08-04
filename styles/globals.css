@@ -30,34 +30,27 @@
   font-style: normal;
 }
 
-:root {
-  --color-background: #ECECEC;
-  --color-bg-projects: #DBC1B0;
+@font-face {
+  font-family: 'Achiko';
+  src: url('../public/fonts/achiko.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* [data-theme='dark'] {
-  --color-background: #111827;
-  --color-bg-projects: #423E4D;
-  --color-text: #ECECEC;
-} */
-
-/* @layer utilities {
-  :root {
-    --color-bg-primary: #ffffff;
-    --color-bg-secondary: #edf2f7;
-    --color-text-primary: #2d3748;
-    --color-text-secondary: #4a5568;
-    --color-text-accent: #2b6cb0;
-  }
-
-  .dark {
-    --color-bg-primary: #171717;
-    --color-bg-secondary: #283141;
-    --color-text-primary: #f7fafc;
-    --color-text-secondary: #a4a4a4;
-    --color-border: #b4b4b4;
-  }
-} */
+:root {
+  --color-background: #f9f9f9;
+  --foreground: #080808;
+  --heading: #FD1E1F;
+  --alt-1: #0000cc;
+  --alt-2: #80e5ff;
+  --accent: #3db2ff;
+  --accent-light: #ff6b6b;
+  --moss: #678e4b;
+  --aegean: #184F63;
+  --apple: #A3C489;
+  --vanilla: #F7E4CE;
+}
 
 html,
 body {
@@ -65,19 +58,31 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--color-background);
-  color: var(--color-text);
+  color: var(--foreground);
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.playful {
+  font-family: var(--font-gaegu);
+}
+
+.elegant {
+  font-family: var(--font-ibm-plex-serif);
+}
+
+.handwritten {
+  font-family: var(--font-reenie-beanie);
+}
+
+.achiko {
+  font-family: 'Achiko', serif;
 }
 
 h2,
 .home {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-
-  background: linear-gradient(90.13deg,#d1aad7 .11%,#c88bc4 25.06%,#7b8fdd 50%,#86bff2 74.8%,#bbdef2 99.76%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: var(--font-ibm-plex-serif);
+  font-weight: 300;
+  color: var(--heading);
 }
 
 a {
@@ -93,13 +98,15 @@ a {
 
 /* THEME */
 .project--container {
-  background-color: var(--color-bg-projects);
+  background-color: var(--accent-light);
 }
 
 .dark {
-  --color-background: #111827;
-  --color-bg-projects: #423E4D;
-  --color-text: #ECECEC;
+  --color-background: #184F63;
+  --color-bg-projects: var(--aegean);
+  --color-text: var(--vanilla);
+  --foreground: var(--vanilla);
+  --heading: var(--accent-light);
 }
 
 .dark .text-primary {
@@ -107,5 +114,5 @@ a {
 }
 
 .dark .project--container {
-  background-color: var(--color-bg-projects);
+  background-color: #043344;
 }

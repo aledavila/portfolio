@@ -22,9 +22,9 @@ export default function HomePage() {
 
   return ( 
     <Layout>
-      <div role='main' className='relative page w-full h-full px-6 lg:px-12 xl:px-20 flex items-center bg-light'>
-        <h2 className='home text-2xl sm:text-5xl md:text-8xl'>Alessandra Davila</h2>
-      </div>
+      <main className='relative page w-full h-full px-6 lg:px-12 xl:px-20 flex items-center bg-light'>
+        <h2 className='home achiko text-2xl sm:text-5xl md:text-8xl'>Alessandra Davila</h2>
+      </main>
     </Layout>
   )
 }

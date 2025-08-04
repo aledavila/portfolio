@@ -15,11 +15,24 @@ transition: all .3s ease;
 } */
 
 .project-title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-family: var(--font-ibm-plex-serif);
+  font-weight: normal;
 }
 
 .project-desc,
 .tech-stack {
   font-family: 'Mono-light';
+}
+
+.project--container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project--container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project--container a:hover {
+  color: var(--heading) !important;
 }
