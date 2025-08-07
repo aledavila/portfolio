@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { Gaegu, IBM_Plex_Serif, Reenie_Beanie } from "next/font/google"
+import { Gaegu, IBM_Plex_Serif } from "next/font/google"
 
 const gaegu = Gaegu({
   variable: "--font-gaegu",
@@ -13,15 +13,9 @@ const ibmPlex = IBM_Plex_Serif({
   weight: "400",
 });
 
-const reenieBeanie = Reenie_Beanie({
-  variable: "--font-reenie-beanie",
-  subsets: ["latin"],
-  weight: "400",
-});
-
 function MyApp({ Component, pageProps }) {
   return (
-    <div className={`${gaegu.variable} ${ibmPlex.variable} ${reenieBeanie.variable}`}>
+    <div className={`${gaegu.variable} ${ibmPlex.variable}`}>
       <Component {...pageProps} />
     </div>
   )
